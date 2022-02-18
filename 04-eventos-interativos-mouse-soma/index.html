@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font-size: 20pt;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(3, 112, 112);
+            color: azure;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            border-radius: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()"><!--quando clicar, entrar, sair-->
+        Interaja...
+
+    </div>
+    <script>
+    
+        function clicar(){//funções so sao executadas quando são chamadas
+            var a = window.document.getElementById('area')
+            a.innerHTML = 'Clicou!'
+            a.style.backgroundColor = 'red'
+            a.style.borderRadius = '100px'
+        }
+
+        function entrou(){
+            var b = window.document.getElementById('area')
+            b.innerHTML = 'Entrou'
+            b.style.backgroundColor = 'black'
+            b.style.color = 'white'
+            b.style.borderRadius = '0px'
+        }
+        function saiu(){
+            var c = window.document.getElementById('area')
+            c.innerHTML = 'Saiu'
+            c.style.color = 'black'
+            c.style.backgroundColor = 'yellow'
+            c.style.borderRadius = '50px'
+        }
+    </script>
+</body>
+</html>

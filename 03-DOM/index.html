@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(89, 0, 255);
+            color: aliceblue;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudos com DOM (Document Object Model)</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> </p>
+    <div id="msg">Clique aqui</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]//para acessar o primeiro paragrafo
+        window.document.write(p1.innerText)//para escrever o var p1
+        p1.style.backgroundColor = 'black' //para o primeiro paragrafo p1 ficar com fundo preto
+
+        //innerText puxa so o texto, innerHTML puxa o texto com a formatação HTML
+
+        var corpo = window.document.body
+        corpo.style.color = 'yellow' //acessando o body
+        
+        var d = window.document.getElementById('msg')//selecionando o id da div
+        d.style.background = 'green'
+        d.innerText = 'Texto modificado' //modificando o texto original
+        /*var d = window.document.querySelector('div#msg') outra forma de fazer a variavel*/
+    </script>
+</body>
+</html>

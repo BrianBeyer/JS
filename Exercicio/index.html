@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores de fundo</title>
+    <style>
+        body{
+            background-color: rgb(199, 199, 37);
+        }
+        div#black{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 20px;
+            color: white;
+            background-color: black;
+        }
+        div#white{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 20px;
+            color: black;
+            background-color: white;
+        }
+        div#red{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+            background-color: red;
+        }
+        div#blue{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+            background-color: blue;
+
+        }
+        
+        
+    </style>
+</head>
+<body id="body">
+    
+    <div id="black" onclick="clicar()">BLACK</div>
+    <hr>
+    <div id="white" onclick="clicar1()" >WHITE</div>
+    <hr>
+    <div id="red" onclick="clicar2()">RED</div>
+    <hr>
+    <div id="blue" onclick="clicar3()">BLUE</div>
+    <hr>
+   
+
+    <script>
+        var body = window.document.getElementById('body')
+        function clicar(){
+            body.style.backgroundColor = 'black'
+        }
+        function clicar1(){
+            body.style.backgroundColor = 'white'
+        }
+        function clicar2(){
+            body.style.backgroundColor = 'red'
+        }
+        function clicar3(){
+            body.style.backgroundColor = 'blue'
+        }
+    </script>
+</body>
+</html>

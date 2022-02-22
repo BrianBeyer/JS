@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+    <style>
+        body{
+            background-color: darkseagreen;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de nacionalidade</h1>
+    Qual sua nacionalidade? <input type="text" name="txt" id="txt">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+</body>
+<script>
+    function calcular(){
+    var txt = window.document.getElementById('txt')
+    var res = window.document.getElementById('res') 
+    var pais = String(txt.value)
+    if (pais != 'brasileiro') {
+        res.innerHTML = '<P>Você é Extrangeiro</p>'
+    } else {
+        res.innerHTML = '<p>Você é Brasileiro do Brasil</p>'
+    }
+}
+</script>
+</html>

@@ -1,0 +1,36 @@
+body{
+background-color: rgb(81, 10, 245);
+font: normal 15pt Arial;
+}
+header{
+    color: beige;
+    text-align: center;
+}
+section{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+
+}
+div{
+    text-align: center;
+    padding: 5px;  
+}
+
+footer {
+    color: beige;
+    text-align: center;
+    font-style: italic;
+    
+}
+#imagem{
+    border-radius: 500%;
+    margin: auto;
+    
+    
+}
